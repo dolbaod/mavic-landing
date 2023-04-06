@@ -24,10 +24,23 @@ $(function(){
 
     //Accordion
 
+      // $('.item-inner').on('click', function(){
+
+      //   $('.item-inner').removeClass('open');
+      //   $(this).addClass('open');
+
+      // });
+      
       $('.item-inner').on('click', function(){
 
-        $('.item-inner').removeClass('open');
-        $(this).addClass('open');
+        if($(this).hasClass('open')){
+          $(this).removeClass('open');
+        }
+
+        else {
+          $('.item-inner').removeClass('open');
+          $(this).addClass('open');
+        }
 
       });
 
